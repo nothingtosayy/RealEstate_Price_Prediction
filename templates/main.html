@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rohith RealEstate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body style="background: url(https://wallpapercave.com/wp/wp5917909.jpg); background-size: 100% 200%">
+<center>
+{% block content %}
+<form action="result/" method="post">
+{% csrf_token %}
+<br>
+    <br>
+<p style="color: azure">Select Location</p>
+{#<input type="text" name="location" placeholder="Location"><br>#}
+    <select name="location" id="location" required="required" style="width: 180px;">
+        <option value="1st block jayanagar">1st block jayanagar</option>
+        <option value="kasavanhalli">kasavanhalli</option>
+        <option value="yeshwanthpur">yeshwanthpur</option>
+        <option value="yelenahalli">yelenahalli</option>
+        <option value="rajiv nagar">rajiv nagar</option>
+        <option value="vittasandra">vittasandra</option>
+        <option value="yelahanka">yelahanka</option>
+        <option value="whitefield">whitefield</option>
+        <option value="vishveshwarya layout">vishveshwarya layout</option>
+        <option value="rajaji nagar">rajaji nagar</option>
+        <option value="bommasandra">bommasandra</option>
+        <option value="2nd phase judicial layout">2nd phase judicial layout</option>
+        <option value="arekere">arekere</option>
+        <option value="chandapura">chandapura</option>
+        <option value="tindlu">tindlu</option>
+        <option value="amruthahalli">amruthahalli</option>
+        <option value="brookefield">brookefield</option>
+        <option value="electronic city">electronic city</option>
+    </select>
+<br>
+    <br>
+<p style="color: azure">Bedrooms</p>
+<select name="bedrooms" id="bedrooms" required="required" style="width: 150px;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+<br>
+<br>
+<p style="color: azure">Bathrooms</p>
+<select name="bath" id="bath" required="required" style="width: 150px;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+<br>
+<br>
+<p style="color: azure">Area</p>
+<input type="text" name="area" placeholder="Area"><br>
+<br>
+
+<input style="color: black" type="submit" value="Predict"><br>
+<br>
+
+
+
+</form>
+    <br>
+    <p style="color: azure">© Songala Rohith Kumar</p>
+    </center>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+{% endblock %}
+</body>
+</html>
